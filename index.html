@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header id="header">
+    <a href="#homePage"><span class="unique" id="cj">CJ</span></a>
+</header>
+
+    <div id="motherContainer">
+
+        <section id="homePage">
+            <h1>
+                <u id="line">
+                    CHIJIOKE <span class="unique">JUDE</span>
+                </u>
+            </h1>
+
+            <div id="profileBox">
+                <img src="Web photo/my logo.png" alt="profile photo" id="profile" class="profileImage">
+            </div>
+
+                <p>SOFTWARE DEVELOPER</p>
+
+                <p>HTML, CSS, AND JAVASCRIPT PROFICIENT</p>
+
+            <div id="mediaIcons"></div>
+
+            <br>
+
+            <button id="contactButton">CONTACT ME</button>
+        </section>
+
+        <section id="aboutMeBox">
+
+            <h2 class="sectionTitle">
+                <span class="unique">About</span> Me
+            </h2>
+
+            <div id="aboutContent">
+
+                <div id="aboutProfileBox">
+                    <img src="Web photo/my logo.png" alt="profile photo" id="aboutProfile">
+                </div>
+
+                <div id="aboutTextBox">
+                    <p id="aboutMeText"></p>
+                </div>
+
+                <div id="skillsBox">
+
+                    <h2>
+                        <span class="unique">My</span> Skills
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="services">
+            <h2 class="sectionTitle">
+                <span class="unique">Services</span>
+            </h2>
+
+            <div id="servicesContainer"></div>
+        </section>
+
+        <section id="education">
+            <h2 class="sectionTitle">
+                <span class="unique">Qualifications</span>
+            </h2>
+
+            <div id="educationContainer"></div>
+        </section>
+
+        <section id="recentWorks">
+            <h2 class="sectionTitle">
+                <span class="unique">Recent</span> Works
+            </h2>
+
+            <div id="recentWorksContainer"></div>
+        </section>
+
+        <section id="skills">
+            <h2 class="sectionTitle">
+                <span class="unique">Articles</span>
+            </h2>
+
+            <div id="skillsContainer"></div>
+        </section>
+
+     <section id="contact">
+    <h2>Get In <span>Touch</span></h2>
+
+    <form id="contactForm">
+        <div class="inputRow">
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+            >
+
+              <input
+                type="text"
+                name="title"
+                placeholder="Your Title"
+                required
+            >
+        </div>
+
+        <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+        <button type="submit" id="submitBtn">Send Message</button>
+    </form>
+        </section>
+
+
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/index.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

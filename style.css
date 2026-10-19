@@ -1,0 +1,741 @@
+body {
+    background-color: #0a0c1a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#motherContainer {
+    margin-left: 60px;
+    /* overflow: hidden; */
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 50px;
+    color: #faf5f5;
+    font-weight: 790;
+}
+
+#line {
+    color: #58A6FF;
+}
+
+.unique {
+    background: linear-gradient(90deg, #58A6FF, #A855F7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    font-size: xxx-large;
+    color: white;
+    font-family: Arial;
+    background-color: #1d2633;
+    z-index: 1000;
+}
+
+#header svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+
+    filter: drop-shadow(0 0 6px #58A6FF)
+            drop-shadow(0 0 10px #A855F7);
+
+    transition: transform 0.5s ease,
+                fill 0.5s ease,
+                filter 0.5s ease;
+}
+
+#header svg:hover {
+    transform: translateY(-8px);
+    fill: black;
+
+    filter: drop-shadow(0 0 10px #58A6FF)
+            drop-shadow(0 0 18px #A855F7);
+}
+
+#header a {
+    text-decoration: none;
+}
+
+.profileImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+#profileBox {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    background: linear-gradient(90deg, #58A6FF, #A855F7);
+
+    box-shadow: 0 0 35px #dc4fff;
+
+    transition: box-shadow 0.7s ease,
+                width 0.5s ease,
+                height 0.5s ease,
+                transform 0.5s ease;
+}
+
+#profileBox:hover {
+    box-shadow: 0 0 20px #58A6FF,
+                0 0 40px #A855F7;
+
+    width: 220px;
+    height: 220px;
+    transform: translateY(-5px);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: rgba(240, 248, 255, 0.712);
+}
+
+h2 {
+    color: white;
+}
+
+#homePage {
+    text-align: center;
+    /* 1. Set the background image using your live Cloudinary URL */
+    background-image: url("https://res.cloudinary.com/ijxhroj8/image/upload/v1791559808/Gemini_Generated_Image_iq5yt1iq5yt1iq5y.jpg");
+
+    /* 2. Scale the image to fill the entire section cleanly */
+    background-size: cover;
+
+    /* 3. Keep the background centered */
+    background-position: center;
+
+    /* 4. Prevent the background from repeating */
+    background-repeat: no-repeat;
+}
+
+#mediaIcons {
+    display: flex;
+    width: 30%;
+    margin-left: 35%;
+    justify-content: space-evenly;
+    padding: 1px;
+}
+
+#mediaIcons img {
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+#mediaIcons svg {
+    height: 30px;
+    width: 30px;
+    fill: white;
+
+    filter: drop-shadow(0 0 6px #58A6FF)
+            drop-shadow(0 0 10px #A855F7);
+
+    transition: transform 0.3s ease,
+                fill 0.3s ease,
+                filter 0.3s ease;
+}
+
+#mediaIcons svg:hover {
+    transform: translateY(-5px);
+    fill: black;
+
+    filter: drop-shadow(0 0 10px #58A6FF)
+            drop-shadow(0 0 18px #A855F7);
+}
+
+#contactButton {
+    font-size: large;
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    font-family: Arial;
+
+    background-image: linear-gradient(90deg, #58A6FF, #A855F7);
+    color: #FFFFFF;
+
+    box-shadow: 0 0 15px #58A6FF;
+
+    transition: transform 0.5s ease,
+                box-shadow 0.6s ease,
+                color 0.4s ease;
+}
+
+#contactButton:hover {
+    box-shadow: 0 0 20px #dc4fff;
+    transform: translateY(-3px);
+    color: #0a0c1a;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+#aboutContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#aboutProfileBox {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+
+    background: linear-gradient(90deg, #58A6FF, #A855F7);
+
+    box-shadow: 0 0 25px #A855F7;
+}
+
+#aboutProfile {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+#aboutTextBox {
+    width: 40%;
+    padding: 20px;
+    border-radius: 15px;
+
+    box-shadow: -10px 10px 25px rgba(88, 166, 255, 0.25);
+}
+
+#aboutMeText {
+    margin: 0;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.sectionTitle {
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+#skillsBox {
+    width: 25%;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin-bottom: 5px;
+}
+
+.skillBar {
+    width: 100%;
+    height: 10px;
+    background-color: #1d2633;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#skillPercentage{
+    margin-left: 90%;
+}
+
+.skillLevel {
+    height: 100%;
+    background: linear-gradient(90deg, #58A6FF, #A855F7);
+    border-radius: 10px;
+}
+
+/* =========================
+   NAVIGATION LABELS
+========================= */
+
+.navItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navItem span {
+    position: absolute;
+    left: 40px;
+
+    background-color: black;
+    color: white;
+
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 4px;
+
+    opacity: 0;
+    white-space: nowrap;
+
+    transition: opacity 0.3s ease;
+}
+
+.navItem:hover span {
+    opacity: 1;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+#servicesContainer {
+    width: 90%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.serviceBox {
+    background-color: #1d2633;
+    border-radius: 15px;
+    padding: 25px 20px;
+    text-align: center;
+
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.serviceBox:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 0 15px #58A6FF,
+        0 0 30px #A855F7;
+}
+
+.serviceBox p {
+    color: rgba(240, 248, 255, 0.712);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.serviceBox h3{
+    color: #58A6FF;
+}
+
+.sectionGlow {
+    box-shadow:
+        0 0 15px #58A6FF,
+        0 0 30px #A855F7;
+    border: 2px solid #58A6FF;
+    transition: box-shadow 0.5s ease, border 0.5s ease;
+}
+
+.sectionGlow.fade {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: xx-large;
+    }
+
+    #mediaIcons {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #header {
+        width: 100%;
+        height: 60px;
+        left: 0;
+        bottom: 0;
+        top: auto;
+
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+    }
+
+    #motherContainer {
+        margin-left: 0;
+    }
+
+    .navItem {
+        position: relative;
+    }
+
+    .navItem span {
+        position: absolute;
+        bottom: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        background-color: black;
+        color: white;
+
+        padding: 5px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    #cj {
+        display: none;
+    }
+
+    #aboutContent {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #aboutTextBox {
+        width: 70%;
+    }
+
+    #skillsBox {
+        width: 85%;
+        padding-bottom: 80px;
+    }
+
+    .navItem:hover span {
+        opacity: 1;
+    }
+
+    #servicesContainer {
+        width: 85%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-bottom: 80px;
+    }
+}
+
+.serviceBox svg {
+    width: 60px;
+    height: 60px;
+}
+
+/* HTML */
+.serviceBox:nth-child(1) svg {
+    fill: #ff5722;
+}
+
+/* CSS */
+.serviceBox:nth-child(2) svg {
+    fill: #2196f3;
+}
+
+/* JavaScript */
+.serviceBox:nth-child(3) svg {
+    fill: #f7df1e;
+}
+
+#educationContainer {
+    width: 90%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.educationBox {
+    background-color: #1d2633;
+    border-radius: 15px;
+    padding: 25px 20px;
+    text-align: center;
+
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.educationBox:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 0 15px #58A6FF,
+        0 0 30px #A855F7;
+}
+
+.educationBox h3 {
+    color: rgb(168, 79, 247);
+}
+
+.educationBox p {
+    color: rgba(240, 248, 255, 0.712);
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+
+    #educationContainer {
+        width: 85%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-bottom: 80px;
+    }
+}
+
+/* //////////RECENT WORKS SECTION//////////////////////// */
+
+#recentWorksContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.workCard {
+    background: #1d2633;
+    border: 1px solid rgba(88, 166, 255, 0.2);
+    border-radius: 16px;
+    overflow: hidden;
+    color: #faf5f5;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.2);
+}
+
+.cardImageContainer {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cardBody {
+    padding: 20px;
+}
+
+.cardBody h3 {
+    color: #58A6FF;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.cardBody p {
+    color: rgba(240, 248, 255, 0.712);
+    line-height: 1.6;
+}
+
+.cardLinks {
+    margin-top: 20px;
+}
+
+.workBtn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #58A6FF, #A855F7);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact {
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+#contact h2 {
+    text-align: center;
+    color: #faf5f5;
+    margin-bottom: 28px;
+    font-size: 26px;
+}
+
+#contact h2 span {
+    color: #00e5f2;
+}
+
+#contactForm {
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+.inputRow {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.inputRow input {
+    flex: 1;
+    min-width: 0;
+}
+
+#contactForm input,
+#contactForm textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 17px;
+    background: #1b1c30;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    color: #faf5f5;
+    font: inherit;
+    outline: none;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #00e5f2;
+}
+
+#contactForm textarea {
+    height: 120px;
+    resize: vertical;
+    margin-bottom: 18px;
+}
+
+#contactForm button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #00e5f2;
+    color: #0a0c1a;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#contactForm button:hover {
+    box-shadow: 0 0 18px rgba(0, 229, 242, 0.4);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .inputRow {
+        flex-direction: column;
+    }
+}
+
+
+#articlesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.articleCard {
+    width: 300px;
+    background: #1d2633;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.articleCard img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.articleCard h3 {
+    color: #faf5f5;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.articleCard p {
+    color: rgba(240, 248, 255, 0.712);
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 15px 20px;
+}
+
+.articleCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.35);
+}
+
+
+@media (max-width: 768px) {
+    .articleCard {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+
+#scrollToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #58A6FF, #A855F7);
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    z-index: 1000;
+}
+
+#scrollToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
