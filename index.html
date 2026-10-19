@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     
@@ -14,15 +15,14 @@
 
     <div id="motherContainer">
 
+
         <section id="homePage">
             <h1>
-                <u id="line">
                     CHIJIOKE <span class="unique">JUDE</span>
-                </u>
             </h1>
 
             <div id="profileBox">
-                <img src="Web photo/my logo.png" alt="profile photo" id="profile" class="profileImage">
+                <img src="https://res.cloudinary.com/ijxhroj8/image/upload/v1790080029/mylogo.png" alt="profile photo" id="profile" class="profileImage">
             </div>
 
                 <p>SOFTWARE DEVELOPER</p>
@@ -33,7 +33,7 @@
 
             <br>
 
-            <button id="contactButton">CONTACT ME</button>
+            <a href="#contact"><button id="contactButton">CONTACT ME</button></a>
         </section>
 
         <section id="aboutMeBox">
@@ -88,18 +88,15 @@
             <div id="recentWorksContainer"></div>
         </section>
 
-        <section id="skills">
-            <h2 class="sectionTitle">
-                <span class="unique">Articles</span>
-            </h2>
-
-            <div id="skillsContainer"></div>
+        <section id="articles">
+            <h2><span class="unique">My</span> Articles</h2>
+            <div id="articlesContainer"></div>
         </section>
 
-     <section id="contact">
-    <h2>Get In <span>Touch</span></h2>
+        <section id="contact">
+        <h2>Get In <span>Touch</span></h2>
 
-    <form id="contactForm">
+        <form id="contactForm">
         <div class="inputRow">
             <input
                 type="text"
@@ -130,13 +127,16 @@
         ></textarea>
 
         <button type="submit" id="submitBtn">Send Message</button>
-    </form>
+        </form>
+        <br>
+            <button id="scrollToTop" title="Scroll to top" aria-label="Scroll to top">
+                <span class="mouseScroll"></span>
+            </button>
         </section>
 
+            
 
     </div>
-    
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/index.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
